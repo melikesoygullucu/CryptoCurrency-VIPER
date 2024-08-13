@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+// Talks to -> View, Interactor, Router
+// Class, protocol

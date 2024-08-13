@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// Talks to -> Presenter
+// Class, protocol
+// ViewController
+

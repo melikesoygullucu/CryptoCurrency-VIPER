@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+// Class, protocol
+// Entry Point
