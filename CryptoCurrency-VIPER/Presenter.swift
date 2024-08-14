@@ -9,3 +9,19 @@ import Foundation
 
 // Talks to -> View, Interactor, Router
 // Class, protocol
+
+protocol AnyPresenter {
+    var router : AnyRouter? {get set}
+    var interactor : AnyInteractor? {get set}
+    var view : AnyView? {get set}
+}
+
+class CryptoPresenter : AnyPresenter {
+    var router: AnyRouter?
+    
+    var interactor: AnyInteractor?
+    
+    var view: AnyView?
+    
+    
+}

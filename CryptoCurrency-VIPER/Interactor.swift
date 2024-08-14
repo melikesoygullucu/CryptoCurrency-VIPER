@@ -10,3 +10,10 @@ import Foundation
 // Talks to -> Presenter
 // Class, protocol
 
+protocol AnyInteractor {
+    
+}
+
+class CryptoInteractor : AnyInteractor{
+    
+}
