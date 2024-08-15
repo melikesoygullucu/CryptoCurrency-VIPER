@@ -32,9 +32,9 @@ class CryptoInteractor : AnyInteractor{
             
             do {
                 let cryptos = try JSONDecoder().decode([Crypto].self, from: data)
-                self.presenter?.interactorDidDownloadCrypto(result: .success(cryptos))
+                self?.presenter?.interactorDidDownloadCrypto(result: .success(cryptos))
             } catch {
-                self.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.ParsingFailed))
+                self?.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.ParsingFailed))
             }
         }
         task.resume()
