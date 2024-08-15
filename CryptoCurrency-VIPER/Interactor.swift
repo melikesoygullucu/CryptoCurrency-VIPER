@@ -24,9 +24,9 @@ class CryptoInteractor : AnyInteractor{
             return
         }
         
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let data = data,  error == nil  else {
-                self.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.NetworkFailed))
+                self?.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.NetworkFailed))
                 return
             }
             
