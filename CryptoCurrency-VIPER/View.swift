@@ -23,14 +23,14 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
     var presenter: AnyPresenter?
     var cryptos : [Crypto] = []
     
-    private var tableView : UITableView {
+    private var tableView : UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         table.isHidden = true
         return table
-    }
+    }()
     
-    private var messageLabel : UILabel {
+    private var messageLabel : UILabel = {
         let message = UILabel()
         message.isHidden = false
         message.text = "Loading..."
@@ -38,11 +38,11 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
         message.textColor = .black
         message.textAlignment = .center
         return message
-    }
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .yellow
         view.addSubview(tableView)
         view.addSubview(messageLabel)
         

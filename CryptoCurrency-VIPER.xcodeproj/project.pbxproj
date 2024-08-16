@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D91FCA62C6A42BD00B815D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91FCA52C6A42BD00B815D9 /* AppDelegate.swift */; };
 		4D91FCA82C6A42BD00B815D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91FCA72C6A42BD00B815D9 /* SceneDelegate.swift */; };
-		4D91FCAA2C6A42BD00B815D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91FCA92C6A42BD00B815D9 /* ViewController.swift */; };
 		4D91FCAF2C6A42BE00B815D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D91FCAE2C6A42BE00B815D9 /* Assets.xcassets */; };
 		4D91FCB22C6A42BE00B815D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D91FCB02C6A42BE00B815D9 /* LaunchScreen.storyboard */; };
 		4D91FCBA2C6A432100B815D9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91FCB92C6A432100B815D9 /* View.swift */; };
@@ -23,7 +22,6 @@
 		4D91FCA22C6A42BD00B815D9 /* CryptoCurrency-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoCurrency-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D91FCA52C6A42BD00B815D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D91FCA72C6A42BD00B815D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D91FCA92C6A42BD00B815D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D91FCAE2C6A42BE00B815D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D91FCB12C6A42BE00B815D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D91FCB32C6A42BE00B815D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				4D91FCA52C6A42BD00B815D9 /* AppDelegate.swift */,
 				4D91FCA72C6A42BD00B815D9 /* SceneDelegate.swift */,
-				4D91FCA92C6A42BD00B815D9 /* ViewController.swift */,
 				4D91FCAE2C6A42BE00B815D9 /* Assets.xcassets */,
 				4D91FCB02C6A42BE00B815D9 /* LaunchScreen.storyboard */,
 				4D91FCB32C6A42BE00B815D9 /* Info.plist */,
@@ -153,7 +150,6 @@
 				4D91FCBE2C6A433400B815D9 /* Presenter.swift in Sources */,
 				4D91FCBA2C6A432100B815D9 /* View.swift in Sources */,
 				4D91FCC02C6A434100B815D9 /* Entity.swift in Sources */,
-				4D91FCAA2C6A42BD00B815D9 /* ViewController.swift in Sources */,
 				4D91FCBC2C6A432E00B815D9 /* Interactor.swift in Sources */,
 				4D91FCA62C6A42BD00B815D9 /* AppDelegate.swift in Sources */,
 				4D91FCA82C6A42BD00B815D9 /* SceneDelegate.swift in Sources */,
@@ -305,7 +301,7 @@
 				INFOPLIST_FILE = "CryptoCurrency-VIPER/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +329,7 @@
 				INFOPLIST_FILE = "CryptoCurrency-VIPER/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
