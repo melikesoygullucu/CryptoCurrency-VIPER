@@ -14,7 +14,6 @@ import UIKit
 
 protocol AnyView {
     var presenter : AnyPresenter? {get set}
-    
     func update(with cryptos : [Crypto])
     func update(with error : String)
     
@@ -22,6 +21,7 @@ protocol AnyView {
 
 class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UITableViewDataSource {
     var presenter: AnyPresenter?
+    var cryptos : [Crypto] = []
     
     private var tableView : UITableView {
         let table = UITableView()
@@ -51,6 +51,9 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
     }
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
+        messageLabel.frame = CGRect(x: view.frame.width / 2 - 100, y: view.frame.height / 2 - 25, width: 200, height: 50)
         
     }
     
@@ -63,7 +66,12 @@ class CryptoViewController : UIViewController, AnyView, UITableViewDelegate, UIT
     }
     
     func update(with cryptos: [Crypto]) {
-        
+        DispatchQueue.main.async {
+            self.cryptos = cryptos
+            self.messageLabel.isHidden = true
+            self.tableView.reloadData()
+            self.tableView.isHidden = false
+        }
     }
     
     func update(with error: String) {
